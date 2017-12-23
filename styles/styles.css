@@ -1,0 +1,87 @@
+#Erase {
+	font-size: 20px;
+}
+
+#randomColor {
+	font-size: 20px;
+}
+
+#Black {
+	background-color: black;
+	color: white;
+	font-size: 20px;
+}
+
+.controls {
+	display:block;
+	position: absolute;
+}
+
+.control_buttons {
+	display: block;
+	margin: 50px;
+	height: 100px;
+	width: 100px;
+}
+
+h1 {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+	background-color: grey;
+}
+
+#grid {
+	height: 500px;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	border: solid black;
+	padding: 0px;
+	display: block;
+	background-color: white;
+}
+
+.row {
+	height: 500px;
+	width: 500px;
+	display: block;
+	position: relative;
+	margin: 0px;
+}
+
+.cell {
+	height: 500px;
+	width: 500px;
+	display: inline-block;
+	float: left;
+	position: relative;
+	margin: 0px;
+	border-radius: 20%;
+
+}
+
+form {
+	margin-top: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	position: relative;
+	vertical-align: center;
+}
+
+input {
+	height: 30px;
+	width: 200px;
+	padding: 0px;
+	margin: 0px;
+}
+
+button {
+	width: 120px;
+	height: 30px;
+}

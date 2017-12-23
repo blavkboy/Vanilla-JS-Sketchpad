@@ -1,0 +1,19 @@
+1. Create a grid of square shaped div elements that will be 16x16 by default.
+2. The grid should have a uniform size in terms of the px wide and high(so I recon it should be contained in a single div that will act as a "container")
+3. The grid should have a button which allows the user to change the number of divs a side. i.e should 64 be given then the grid should be 64x64 while maintaining the overall grid size.
+4. This is optional, but try top have the grid darken the color or select completely random colors while you move the cursor over the grid.
+5. Found it almost impossible to make the grid and the size of the grid blocks the same number so I came up with a solution:
+	5.1) The first is that the inner divs should share dimensional properties with main div that's acting as a wrapper for "row" and "cell" divs respectively.
+	5.2) The idea is that the "row" div divides it's height value by the number of grid boxes requested.
+	5.3) Above that the "cell" div would divide both of its height and width properties by the number of grid boxes chosen.
+	5.4) The row and cell divs would multiply themselves by the grid size number. e.g "20" would give us 20 row divs and 20 cell divs per row div.
+6. I've had some dificulty stopping the mouse from drawing on the ".cell" divs... I want to know if it would be possible to remove the ".cell" class altogher.
+	6.1) Removing the class could make my coloring on hover inactive.
+	6.2) A new problem is created. I would need to return the '.cell' class to all the <div class="row"> elements in the DOM.
+	6.3) Should this problem be solved and the two states can have the user switch between them, I would like to create a button that allows the user to toggle between these two states.
+	6.4) VERY IMPORTANT ALTERNATIVE: I would like to change the "mouseenter" event to one which checks to see if the user is clicking and holding down the mouse button.
+		6.4.1) The above attempt would remove any need for a button to switch between drawing black, random colors and erase(white).
+		6.4.2) Removing the '.cell' class raised an unforseen problem, the <div> blocks with the class lost their styling when the class was removed and lost their position and display properties.
+		6.4.3) My solution was to  introduce a new class which only delt with the 'mouseenter' event by adding the color styles that the 'cell' class gave divs.
+		6.4.4) on(click) I toggled between the classes, allowing me to choose when I want to simulate the act of drawing on the canvas.
+		6.4.5) All in all it seems both the ideas for this step worked well together.

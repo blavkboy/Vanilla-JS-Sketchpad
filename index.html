@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript and jQuery sketchpad project</title>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+	<center>
+	<h1>jQuery/JavaScript Sketch Pad</h1>
+	</center>
+	<div class="controls">
+		<form>
+			<button type="button" class="control_buttons" id="randomColor">Random Color</button>
+			<button type="button" class="control_buttons" id="Black">Black</button>
+			<button type="button" class="control_buttons" id="Erase">Erase</button>
+		</form>
+	</div>
+
+	<div id="grid">
+		
+	</div>
+	<center>
+	<form>
+		<input type="text" name="cells-per-side" id="inputField" value="16" required>
+		<input type="submit" name="grid-submit" value="Grid Submit" id="button">
+	</form>
+	</center>
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
+</body>
+</html>
