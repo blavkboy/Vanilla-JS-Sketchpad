@@ -120,7 +120,7 @@ window.onload = function(){
 		}
 	}
 
-	let painter = "white";
+	let painter = "black";
 
 	paintColor();
 
